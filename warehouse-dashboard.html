@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
+    <title>YIS 6.0 | Warehouse</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-extension.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Menu CSS -->
+    <link href="css/sidebar-nav.min.css" rel="stylesheet">
+    <!-- Animation CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/custom-select.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap-select.min.css" rel="stylesheet" />
+    <link href="css/multi-select.css" rel="stylesheet" type="text/css" />
+    <link href="css/loading-bar.css" rel="stylesheet" type="text/css" />
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/colors/main.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="cssload-speeding-wheel"></div>
+    </div>
+    <div id="wrapper">
+        <!-- Top Navigation -->
+        <nav class="navbar navbar-default navbar-static-top m-b-0">
+            <div class="navbar-header"> <a class="navbar-toggle hidden-sm hidden-md hidden-lg " href="javascript:void(0)" data-toggle="collapse" data-target=".navbar-collapse"><i class="ti-menu"></i></a>
+                <!-- Logo -->
+                <div class="top-left-part">
+                    <a class="logo" href="index.html">
+                        <img src="images/logo.png" alt="home" class="img-responsive" />
+                    </a>
+                </div>
+                <!-- /Logo -->
+                <!-- This is for mobile view search and menu icon -->
+                <ul class="nav navbar-top-links navbar-left hidden-xs">
+                    <li><a href="javascript:void(0)" class="open-close hidden-xs waves-effect waves-light"><i class="icon-arrow-left-circle ti-menu"></i></a></li>
+                    <li>
+                        <form role="search" class="app-search hidden-xs">
+                            <input type="text" placeholder="Search Customers here by Customer #, Name, Zip or by Tags..." class="form-control"> <a href=""><i class="fa fa-search"></i></a>
+                        </form>
+                    </li>
+                </ul>
+                <!-- This is the message dropdown -->
+                <ul class="nav navbar-top-links navbar-right pull-right">
+                    <li class="dropdown"> <a class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#"><i class="icon-envelope"></i>
+          <div class="notify"><span class="heartbit"></span><span class="point"></span></div>
+          </a>
+                        <ul class="dropdown-menu mailbox animated flipInY">
+                            <li>
+                                <div class="drop-title">You have 4 new messages</div>
+                            </li>
+                            <li>
+                                <div class="message-center">
+                                    <a href="#">
+                                        <div class="user-img"> <img src="images/profile-2.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                                        <div class="mail-contnet">
+                                            <h5>User 1</h5> <span class="mail-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span> <span class="time">9:30 AM</span> </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="user-img"> <img src="images/profile-2.jpg" alt="user" class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
+                                        <div class="mail-contnet">
+                                            <h5>User 2</h5> <span class="mail-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span> <span class="time">9:10 AM</span> </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="user-img"> <img src="images/profile-2.jpg" alt="user" class="img-circle"> <span class="profile-status away pull-right"></span> </div>
+                                        <div class="mail-contnet">
+                                            <h5>User 3</h5> <span class="mail-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span> <span class="time">9:08 AM</span> </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="user-img"> <img src="images/profile-2.jpg" alt="user" class="img-circle"> <span class="profile-status offline pull-right"></span> </div>
+                                        <div class="mail-contnet">
+                                            <h5>User 4</h5> <span class="mail-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span> <span class="time">9:02 AM</span> </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="text-center" href="javascript:void(0);"> <strong>See all notifications</strong> <i class="fa fa-angle-right"></i> </a>
+                            </li>
+                        </ul>
+                        <!-- /.dropdown-messages -->
+                    </li>
+                    <!-- /.dropdown -->
+                    <li class="dropdown"> <a class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#"><i class="icon-note"></i>
+          <div class="notify"><span class="heartbit"></span><span class="point"></span></div>
+          </a>
+                        <ul class="dropdown-menu dropdown-tasks animated flipInY">
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <p> <strong>Task 1</strong> <span class="pull-right text-muted">40% Complete</span> </p>
+                                        <div class="progress progress-striped active">
+                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> <span class="sr-only">40% Complete (success)</span> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <p> <strong>Task 2</strong> <span class="pull-right text-muted">20% Complete</span> </p>
+                                        <div class="progress progress-striped active">
+                                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"> <span class="sr-only">20% Complete</span> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <p> <strong>Task 3</strong> <span class="pull-right text-muted">60% Complete</span> </p>
+                                        <div class="progress progress-striped active">
+                                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"> <span class="sr-only">60% Complete (warning)</span> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <p> <strong>Task 4</strong> <span class="pull-right text-muted">80% Complete</span> </p>
+                                        <div class="progress progress-striped active">
+                                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"> <span class="sr-only">80% Complete (danger)</span> </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a class="text-center" href="#"> <strong>See All Tasks</strong> <i class="fa fa-angle-right"></i> </a>
+                            </li>
+                        </ul>
+                        <!-- /.dropdown-tasks -->
+                    </li>
+                    <!-- /.dropdown -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#"> <img src="images/profile.jpg" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">Rakesh</b> </a>
+                        <ul class="dropdown-menu dropdown-user animated flipInY">
+                          <li><a href="javascript:void(0)"><i class="ti-user"></i> My Profile</a></li>
+                          <li><a href="javascript:void(0)"><i class="ti-wallet"></i> My Orders</a></li>
+                          <li><a href="javascript:void(0)"><i class="ti-email"></i> My Claims</a></li>
+                          <li><a href="javascript:void(0)"><i class="ti-settings"></i> Account Setting</a></li>
+                          <li><a href="javascript:void(0)"><i class="fa fa-power-off"></i> Logout</a></li>
+                        </ul>
+                        <!-- /.dropdown-user -->
+                    </li>
+                    <li class="dropdown"> <a class="waves-effect waves-light dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)"><i class="ti-settings"></i></a>
+                      <ul class="dropdown-menu dropdown-user animated flipInY colorSettings">
+                        <li><a href="javascript:void(0)" theme="main" class="default-color-theme"></a></li>
+                        <li><a href="javascript:void(0)" theme="website" class="website-color-theme"></a></li>
+                        <li><a href="javascript:void(0)" theme="blue" class="blue-color-theme"></a></li>
+                        <li><a href="javascript:void(0)" theme="green" class="green-color-theme"></a></li>
+                        <li><a href="javascript:void(0)" theme="brown" class="brown-color-theme"></a></li>
+                        <li><a href="javascript:void(0)" theme="magenta" class="magenta-color-theme"></a></li>
+                        <li><a href="javascript:void(0)" theme="darkblue" class="darkblue-color-theme"></a></li>
+                      </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-header -->
+            <!-- /.navbar-top-links -->
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <!-- Left navbar-header end -->
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse slimscrollsidebar HorizontalMenu">
+                <ul class="nav" id="side-menu">
+                    <li class="user-pro">
+                        <a href="#" class="waves-effect"><img src="images/profile.jpg" alt="user-img" class="img-circle"> <span class="hide-menu"> Rakesh<span class="fa arrow"></span></span>
+                        </a>
+                        <hr class="menu-hr"/>
+                        <ul class="nav nav-second-level profile-menu">
+                            <li><a href="javascript:void(0)"><i class="ti-user"></i> My Profile</a></li>
+                            <li><a href="javascript:void(0)"><i class="ti-wallet"></i> My Orders</a></li>
+                            <li><a href="javascript:void(0)"><i class="ti-email"></i> My Claims</a></li>
+                            <li><a href="javascript:void(0)"><i class="ti-settings"></i> Account Setting</a></li>
+                            <li><a href="javascript:void(0)"><i class="fa fa-power-off"></i> Logout</a></li>
+                        </ul>
+                    </li>
+
+                    <li> <a href="index.html" class="waves-effect"><i class="fa fa-dashboard fa-fw"></i> <span class="hide-menu"> Dashboard <span class="fa arrow"></span></span></a></li>
+                    <li> <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-user fa-fw"></i> <span class="hide-menu"> Admin <span class="fa arrow"></span></span></a>
+                        <ul class="nav nav-second-level">
+                            <li> <a href="javascript:void(0)"><i class="fa fa-angle-double-right fa-fw fa-fw"></i>&nbsp;Users</a> </li>
+                            <li> <a href="javascript:void(0)"><i class="fa fa-angle-double-right fa-fw"></i>&nbsp;Department</a> </li>
+                            <li> <a href="javascript:void(0)"><i class="fa fa-angle-double-right fa-fw"></i>&nbsp;Roles</a> </li>
+                            <li> <a href="javascript:void(0)"><i class="fa fa-angle-double-right fa-fw"></i>&nbsp;Resource List</a> </li>
+                            <li> <a href="collectionitems.html"><i class="fa fa-object-group fa-fw"></i>&nbsp;Collection Items</a> </li>
+                            <li> <a href="personalization.html"><i class="fa fa-picture-o fa-fw"></i>&nbsp;Personalization</a> </li>
+                        </ul>
+                    </li>
+                    <li> <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-home fa-fw"></i> <span class="hide-menu"> Warehouse <span class="fa arrow"></span></span></a>
+                        <ul class="nav nav-second-level">
+                            <li> <a href="warehouse-dashboard.html"><i class="fa fa-tachometer fa-fw"></i>&nbsp;Dashboard</a> </li>
+                            <li> <a href="calendar.html"><i class="fa fa-calendar fa-fw"></i>&nbsp;Calendar</a> </li>
+                            <li> <a href="warehouse-checkin.html"><i class="fa fa-check-circle-o fa-fw"></i>&nbsp;Checkin</a> </li>
+                        </ul>
+                    </li>
+                    <li> <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-users fa-fw"></i> <span class="hide-menu"> CSR <span class="fa arrow"></span></span></a>
+                        <ul class="nav nav-second-level">
+                            <li> <a href="zulilyitemfilter.html"><i class="fa fa-user fa-fw"></i>&nbsp;Zulily</a> </li>
+                            <li> <a href="itemfilter.html"><i class="fa fa-filter fa-fw"></i>&nbsp;Item Filter</a> </li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="waves-effect"><i class="fa fa-users fa-fw"></i> <span class="hide-menu"> Customers <span class="fa arrow"></span></span></a>
+                        <ul class="nav nav-second-level">
+                          <li> <a href="customerportal.html"><i class="fa fa-laptop fa-fw"></i>&nbsp;Portal</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-user-plus fa-fw"></i>&nbsp;Add New Customer</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-info-circle fa-fw"></i>&nbsp;Information</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-angle-double-right fa-fw"></i>&nbsp;<span class="hide-menu"> Addresses & Contacts <span class="fa arrow"></span></span></a>
+                            <ul class="nav nav-third-level">
+                                <li> <a href="#"><i class="fa fa-bookmark fa-fw"></i>&nbsp;Addresses</a></li>
+                                <li> <a href="#"><i class="fa fa-group fa-fw"></i>&nbsp;Contacts</a></li>
+                            </ul>
+                          </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-clipboard fa-fw"></i>&nbsp;Notes</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-history fa-fw"></i>&nbsp;History</a> </li>
+                          <li><a href="javascript:void(0)" class="waves-effect"><i class="fa fa-angle-double-right"></i>&nbsp;Claims<span class="fa arrow"></span></a>
+                              <ul class="nav nav-third-level">
+                                  <li> <a href="javascript:void(0)"><i class="fa fa-edit fa-fw"></i>&nbsp;View, Add & Finalize Items</a></li>
+                                  <li> <a href="javascript:void(0)"><i class="fa fa-mail-reply fa-fw"></i>&nbsp;Check In Returns</a></li>
+                              </ul>
+                          </li>
+                          <li><a href="javascript:void(0)" class="waves-effect"><i class="fa fa-angle-double-right"></i>&nbsp;Payments<span class="fa arrow"></span></a>
+                              <ul class="nav nav-third-level">
+                                  <li> <a href="javascript:void(0)"><i class="fa fa-usd fa-fw"></i>&nbsp;Add & View Payments</a></li>
+                                  <li> <a href="javascript:void(0)"><i class="fa fa-cog fa-fw"></i>&nbsp;Auto Add Payments</a></li>
+                                  <li> <a href="javascript:void(0)"><i class="fa fa-credit-card fa-fw"></i>&nbsp;Add & View Credit Cards</a></li>
+                              </ul>
+                          </li>
+                          <li><a href="javascript:void(0)" class="waves-effect"><i class="fa fa-angle-double-right"></i>&nbsp;Orders & Invoices<span class="fa arrow"></span></a>
+                              <ul class="nav nav-third-level">
+                                  <li> <a href="javascript:void(0)"><i class="fa fa-cubes fa-fw"></i>&nbsp;All Items for this Customer</a></li>
+                                  <li> <a href="javascript:void(0)"><i class="fa fa-users fa-fw"></i>&nbsp;All Customers for this Item</a></li>
+                                  <li> <a href="javascript:void(0)"><i class="fa fa-line-chart fa-fw"></i>&nbsp;Historic Pricing of the Item</a></li>
+                              </ul>
+                          </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-list"></i>&nbsp;Quotes</a> </li>
+                        </ul>
+                    </li>
+                    <li> <a href="#" class="waves-effect"><i class="fa fa-truck fa-fw"></i> <span class="hide-menu"> Orders <span class="fa arrow"></span></span></a>
+                        <ul class="nav nav-second-level">
+                          <li> <a href="javascript:void(0)"><i class="fa fa-plus-circle fa-fw"></i>&nbsp;Add New Order</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-file-text-o fa-fw"></i>&nbsp;Add/Edit Items</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-stack-overflow fa-fw"></i>&nbsp;Add Bulk Items</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-truck fa-fw"></i>&nbsp;Billing/Shipping</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-credit-card fa-fw"></i>&nbsp;Credit Card Transaction</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-bolt fa-fw"></i>&nbsp;Auto Process Order</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-compress fa-fw"></i>&nbsp;Rip Order</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-bars fa-fw"></i>&nbsp;Queue Order</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-columns fa-fw"></i>&nbsp;Divide Order</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-retweet fa-fw"></i>&nbsp;Order Life Cycle</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-check fa-fw"></i>&nbsp;Order Commitment</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-clone fa-fw"></i>&nbsp;Check Duplicates</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-pencil-square-o fa-fw"></i>&nbsp;Problems & Overrides</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-files-o fa-fw"></i>&nbsp;Copy & Move Orders</a> </li>
+                          <li> <a href="javascript:void(0)"><i class="fa fa-file-image-o fa-fw"></i>&nbsp;Get Order Images</a> </li>
+                        </ul>
+                    </li>
+                    <li> <a href="javascript:void(0)" class="waves-effect"><i class="fa fa-cubes fa-fw"></i> <span class="hide-menu"> Show Management <span class="fa arrow"></span></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="javascript:void(0)"><i class="fa fa-angle-double-right fa-fw"></i>&nbsp;Showroom Checkin</a></li>
+                            <li><a href="javascript:void(0)"><i class="fa fa-angle-double-right fa-fw"></i>&nbsp;Temporary Users</a></li>
+                            <li><a href="javascript:void(0)"><i class="fa fa-angle-double-right fa-fw"></i>&nbsp;Show Labels</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="javascript:void(0)" class="waves-effect"><i class="fa fa-briefcase fa-fw"></i> <span class="hide-menu"> Marketing <span class="fa arrow"></span></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="javascript:void(0)"><i class="fa fa-angle-double-right fa-fw"></i>&nbsp;Notifications</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row bg-title">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h4 class="page-title">Dashboard</h4>
+                    </div>
+                    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                      <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="javascript:void(0)">Warehouse</a></li>
+                              <li class="breadcrumb-item active">Dashboard</li>
+                          </ol>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 nopaddingleft nopaddingright">
+                        <div class="white-box clearfix">
+							<section>
+								 <div class="col-md-2">
+                                    <div class="head-card card-stats">
+                                        <div class="card-header card-header-warning card-header-icon">
+                                            <div class="card-icon">
+                                                <img src="images/calendar.png" class="img-responsive" alt="">
+                                             </div>
+                                             <div class="card-text-right text-right">
+                                                    <h3 class="card-title">0 / 8</h3>
+                                             </div>
+                                        </div>
+                                        <div class="card-footer-details">
+                                            <p>Days Behind VLD / Non VLD</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                        <div class="head-card card-stats">
+                                            <div class="card-header card-header-warning card-header-icon">
+                                                <div class="card-icon">
+                                                        <img src="images/cancel-form.png" class="img-responsive" alt="">
+                                                 </div>
+                                                 <div class="card-text-right text-right">
+                                                        <h3 class="card-title">402 / 33</h3>
+                                                 </div>
+                                            </div>
+                                            <div class="card-footer-details">
+                                                <p>Cancel Picks / Orders</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                            <div class="head-card card-stats">
+                                                <div class="card-header card-header-warning card-header-icon">
+                                                    <div class="card-icon">
+                                                            <img src="images/available.png" class="img-responsive" alt="">
+                                                     </div>
+                                                     <div class="card-text-right text-right">
+                                                            <h3 class="card-title">3,761</h3>
+                                                     </div>
+                                                </div>
+                                                <div class="card-footer-details">
+                                                    <p>Available Picks</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                                <div class="head-card card-stats">
+                                                    <div class="card-header card-header-warning card-header-icon">
+                                                        <div class="card-icon">
+                                                                <img src="images/community.png" class="img-responsive" alt="">
+                                                         </div>
+                                                         <div class="card-text-right text-right">
+                                                                <h3 class="card-title">0 / 23</h3>
+                                                         </div>
+                                                    </div>
+                                                    <div class="card-footer-details">
+                                                        <p>Pullers / All Staff</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                    <div class="head-card card-stats">
+                                                        <div class="card-header card-header-warning card-header-icon">
+                                                            <div class="card-icon">
+                                                                    <img src="images/delivery.png" class="img-responsive" alt="">
+                                                             </div>
+                                                             <div class="card-text-right text-right">
+                                                                    <h3 class="card-title">$0</h3>
+                                                             </div>
+                                                        </div>
+                                                        <div class="card-footer-details">
+                                                            <p>Ship $ Today</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                        <div class="head-card card-stats">
+                                                            <div class="card-header card-header-warning card-header-icon">
+                                                                <div class="card-icon">
+                                                                        <img src="images/money-bag.png" class="img-responsive" alt="">
+                                                                 </div>
+                                                                 <div class="card-text-right text-right">
+                                                                        <h3 class="card-title">9 / $264</h3>
+                                                                 </div>
+                                                            </div>
+                                                            <div class="card-footer-details">
+                                                                <p>YTD Claims / Claim$</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+													<div class="clearfix"></div>
+							</section>
+              <section>
+                <div class="col-md-2">
+                    <div class="GoalsChart">
+                      <h5 class="text-center">Wed, January 30</h5>
+                      <h3 class="text-center">Goal: 2194</h3>
+
+                      <div class="col-md-12">
+                        <div class="progress-pie-chart" data-percent="22">
+                           <div class="ppc-progress">
+                            <div class="ppc-progress-fill"></div>
+                           </div>
+                           <div class="ppc-percents">
+                            <div class="pcc-percents-wrapper">89 Picks</div>
+                           </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 LegendContent">
+                          <div class="Legend">
+                              <h5><span class="legend100"></span>&nbsp;>&nbsp;100%</h5>
+                          </div>
+                          <div class="Legend">
+                              <h5><span class="legend90to100"></span>&nbsp;90&nbsp;-&nbsp;100%</h5>
+                          </div>
+                          <div class="Legend">
+                              <h5><span class="legend50to90"></span>&nbsp;50&nbsp;-&nbsp;90%</h5>
+                          </div>
+                          <div class="Legend">
+                              <h5><span class="legend50"></span>&nbsp;<&nbsp;50%</h5>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                  <div class="col-md-3">
+                          <div class="employee-card card-stats">
+                              <div class="card-header-details">
+                                  <h4>1.Michelle<span class="badge badge-warning pull-right">2 Claims</span></h4>
+                              </div>
+                              <div class="card-content-details">
+                                <div class="card-content-info">
+                                    <p>Pieces/Cases</p>
+                                    <h4>244/0</h4>
+                                </div>
+                                <div class="card-content-info">
+                                    <p>Qs/ Trips</p>
+                                    <h4>1/1</h4>
+                                </div>
+                                <div class="EmployeeData label-center" style="width:70px; float:right;" data-value="25" data-preset="circle"></div>
+                              </div>
+                              <div class="card-footer-details">
+                                  <p class="pull-left"><strong>Goal:160</strong></p>
+                                  <p class="pull-right"><strong>$749</strong></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-3">
+                              <div class="employee-card card-stats">
+                                  <div class="card-header-details">
+                                      <h4>2.Angela<span class="badge badge-warning pull-right">2 Claims</span></h4>
+                                  </div>
+                                  <div class="card-content-details">
+                                    <div class="card-content-info">
+                                        <p>Pieces/Cases</p>
+                                        <h4>220/0</h4>
+                                    </div>
+                                    <div class="card-content-info">
+                                        <p>Qs/ Trips</p>
+                                        <h4>4/3</h4>
+                                    </div>
+                                    <div class="EmployeeData2 label-center" style="width:70px; float:right;" data-value="22" data-preset="circle"></div>
+                                  </div>
+                                  <div class="card-footer-details">
+                                      <p class="pull-left"><strong>Goal:150</strong></p>
+                                      <p class="pull-right"><strong>$750</strong></p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-3">
+                                  <div class="employee-card card-stats">
+                                      <div class="card-header-details">
+                                          <h4>3.Annette<span class="badge badge-warning pull-right">2 Claims</span></h4>
+                                      </div>
+                                      <div class="card-content-details">
+                                        <div class="card-content-info">
+                                            <p>Pieces/Cases</p>
+                                            <h4>182/1</h4>
+                                        </div>
+                                        <div class="card-content-info">
+                                            <p>Qs/ Trips</p>
+                                            <h4>3/2</h4>
+                                        </div>
+                                        <div class="EmployeeData3 label-center" style="width:70px; float:right;" data-value="19" data-preset="circle"></div>
+                                      </div>
+                                      <div class="card-footer-details">
+                                          <p class="pull-left"><strong>Goal:160</strong></p>
+                                          <p class="pull-right"><strong>$806</strong></p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-3">
+                                      <div class="employee-card card-stats">
+                                          <div class="card-header-details">
+                                              <h4>4.Lisa</h4>
+                                          </div>
+                                          <div class="card-content-details">
+                                            <div class="card-content-info">
+                                                <p>Pieces/Cases</p>
+                                                <h4>203/0</h4>
+                                            </div>
+                                            <div class="card-content-info">
+                                                <p>Qs/ Trips</p>
+                                                <h4>4/4</h4>
+                                            </div>
+                                            <div class="EmployeeData4 label-center" style="width:70px; float:right;" data-value="23" data-preset="circle"></div>
+                                          </div>
+                                          <div class="card-footer-details">
+                                              <p class="pull-left"><strong>Goal:160</strong></p>
+                                              <p class="pull-right"><strong>$694</strong></p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-3">
+                                          <div class="employee-card card-stats">
+                                              <div class="card-header-details">
+                                                  <h4>5.Donita</h4>
+                                              </div>
+                                              <div class="card-content-details">
+                                                <div class="card-content-info">
+                                                    <p>Pieces/Cases</p>
+                                                    <h4>395/1</h4>
+                                                </div>
+                                                <div class="card-content-info">
+                                                    <p>Qs/ Trips</p>
+                                                    <h4>3/3</h4>
+                                                </div>
+                                                <div class="EmployeeData5 label-center" style="width:70px; float:right;" data-value="39" data-preset="circle"></div>
+                                              </div>
+                                              <div class="card-footer-details">
+                                                  <p class="pull-left"><strong>Goal:180</strong></p>
+                                                  <p class="pull-right"><strong>$1,304</strong></p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-3">
+                                              <div class="employee-card card-stats">
+                                                  <div class="card-header-details">
+                                                      <h4>6.Kathy<span class="badge badge-warning pull-right">1 Claims</span></h4>
+                                                  </div>
+                                                  <div class="card-content-details">
+                                                    <div class="card-content-info">
+                                                        <p>Pieces/Cases</p>
+                                                        <h4>138/0</h4>
+                                                    </div>
+                                                    <div class="card-content-info">
+                                                        <p>Qs/ Trips</p>
+                                                        <h4>3/2</h4>
+                                                    </div>
+                                                    <div class="EmployeeData6 label-center" style="width:70px; float:right;" data-value="19" data-preset="circle"></div>
+                                                  </div>
+                                                  <div class="card-footer-details">
+                                                      <p class="pull-left"><strong>Goal:140</strong></p>
+                                                      <p class="pull-right"><strong>$544</strong></p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="col-md-3">
+                                                  <div class="employee-card card-stats">
+                                                      <div class="card-header-details">
+                                                          <h4>7.Linda</h4>
+                                                      </div>
+                                                      <div class="card-content-details">
+                                                        <div class="card-content-info">
+                                                            <p>Pieces/Cases</p>
+                                                            <h4>128/3</h4>
+                                                        </div>
+                                                        <div class="card-content-info">
+                                                            <p>Qs/ Trips</p>
+                                                            <h4>4/3</h4>
+                                                        </div>
+                                                        <div class="EmployeeData7 label-center" style="width:70px; float:right;" data-value="52" data-preset="circle"></div>
+                                                      </div>
+                                                      <div class="card-footer-details">
+                                                          <p class="pull-left"><strong>Goal:150</strong></p>
+                                                          <p class="pull-right"><strong>$1,071</strong></p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="col-md-3">
+                                                      <div class="employee-card card-stats">
+                                                          <div class="card-header-details">
+                                                              <h4>8.Carrole</h4>
+                                                          </div>
+                                                          <div class="card-content-details">
+                                                            <div class="card-content-info">
+                                                                <p>Pieces/Cases</p>
+                                                                <h4>90/9</h4>
+                                                            </div>
+                                                            <div class="card-content-info">
+                                                                <p>Qs/ Trips</p>
+                                                                <h4>5/1</h4>
+                                                            </div>
+                                                            <div class="EmployeeData8 label-center" style="width:70px; float:right;" data-value="18" data-preset="circle"></div>
+                                                          </div>
+                                                          <div class="card-footer-details">
+                                                              <p class="pull-left"><strong>Goal:100</strong></p>
+                                                              <p class="pull-right"><strong>$1,258</strong></p>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+
+                </div>
+              </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container-fluid -->
+            <footer class="footer text-center"> 2018 &copy; All rights reserved. YIS 6.0 </footer>
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-extension.min.js"></script>
+    <script src="js/sidebar-nav.min.js"></script>
+    <script src="js/jquery.slimscroll.js"></script>
+    <script src="js/waves.js"></script>
+    <script src="js/custom-select.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap-select.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery.multi-select.js"></script>
+    <script src="js/custom.min.js"></script>
+    <script src="js/loading-bar.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/remodal.js"></script>
+    <script src="js/jQuery.style.switcher.js"></script>
+    <script>
+    $('.progress-pie-chart').each(function(){
+var $ppc = $(this),
+  percent = parseInt($ppc.data('percent')),
+  deg = 360*percent/100;
+if (percent > 50) {
+  $ppc.addClass('gt-50');
+}
+if (percent <= 25) {
+  $ppc.addClass('red');
+} else if (percent >= 25 && percent <= 90) {
+  $ppc.addClass('orange');
+} else if (percent >= 90) {
+  $ppc.addClass('green');
+}
+
+$ppc.find('.ppc-progress-fill').css('transform','rotate('+ deg +'deg)');
+$ppc.find('.ppc-percents span').html('<cite>'+percent+'</cite>'+'%');
+});
+    </script>
+    <script>
+      var bar1 = new ldBar(".EmployeeData");
+      var bar2 = new ldBar(".EmployeeData2");
+      var bar3 = new ldBar(".EmployeeData3");
+      var bar4 = new ldBar(".EmployeeData4");
+      var bar5 = new ldBar(".EmployeeData5");
+      var bar6 = new ldBar(".EmployeeData6");
+      var bar7 = new ldBar(".EmployeeData7");
+      var bar8 = new ldBar(".EmployeeData8");
+    </script>
+</body>
+
+</html>
