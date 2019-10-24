@@ -331,81 +331,48 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                               <button class="fcbtn btn btn-outline btn-primary btn-1c pull-left" id="AddNewCollectionBtn" type="button">Add New Pre-Book</button>
                                               <div class="AddNewCollection">
                                                   <div class="col-md-12 nopaddingleft nopaddingright">
-                                                  <div class="row">
+                                                    <div class="form-group col-md-3">
+                                                        <label class="control-label">Id#:<sup class="required">*</sup></label>
+                                                        <input type="text" class="form-control" />
+                                                        <p class="help-txt">Max 3 Characters</p>
+                                                    </div>
                                                     <div class="form-group col-md-3">
                                                         <label class="control-label">Pre-Book Name<sup class="required">*</sup></label>
                                                         <input type="text" class="form-control" />
                                                     </div>
                                                     <div class="form-group col-md-3">
-                                                        <label class="control-label">Pre-Book Description:<sup class="required">*</sup></label>
-                                                        <input type="text" class="form-control" />
-                                                        <p class="help-txt">Max 3 Characters</p>
-                                                    </div>
-                                                    <div class="form-group col-md-3">
-                                                        <label class="control-label">Special Start Date</label>
-                                                        <input type="text" class="form-control" placeholder="MM/DD/YYYY" />
-                                                    </div>
-
-                                                    <div class="form-group col-md-3">
-                                                        <label class="control-label">Special End Date</label>
-                                                        <input type="text" class="form-control" placeholder="MM/DD/YYYY" />
-                                                    </div>
-                                                  </div>
-                                                  <div class="row">
-                                                    <div class="form-group col-md-3">
-                                                        <label class="control-label">Pre-Book End Date</label>
+                                                        <label class="control-label">Start Date</label>
                                                         <input type="text" class="form-control" placeholder="MM/DD/YYYY" />
                                                     </div>
                                                     <div class="form-group col-md-3">
-                                                        <label class="control-label">Order Alias</label>
+                                                        <label class="control-label">End Date</label>
                                                         <input type="text" class="form-control" placeholder="MM/DD/YYYY" />
                                                     </div>
-                                                  </div>
                                                     <div class="col-md-12 text-center center-block">
-                                                        <button type="button" class="fcbtn btn btn-outline btn-primary btn-1c" data-toggle="modal" data-target="#Save">Save</button>
+                                                        <button type="button" class="fcbtn btn btn-outline btn-primary btn-1c" id="Save">Save</button>
                                                         <button type="button" class="fcbtn btn btn-outline btn-primary btn-1c" id="Cancel">Cancel</button>
                                                         <p class="help-txt text-center">Pressing Save will create the Pre-Book collection and allow you to add items</p>
                                                     </div>
                                                   </div>
                                               </div>
-                                            </div>
-                                              <div class="col-md-6 nopaddingleft nopaddingright">
-                                                <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12">
-                                                    <div class="radio radio-theme">
-                                                        <input type="radio" name="radio" id="newitem" value="NewItem" checked>
-                                                        <label for="newitem"> Active </label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12">
-                                                    <div class="radio radio-theme">
-                                                        <input type="radio" name="radio" value="ActiveItem" id="activeitem">
-                                                        <label for="activeitem"> All </label>
-                                                    </div>
-                                                </div>
+                                              <div class="pull-right table-search">
+                                                <form role="search" class="app-search pull-left">
+                                                    <input type="text" placeholder="Search..." class="form-control"> <a href=""><i class="fa fa-search"></i></a>
+                                                </form>
+                                                <button type="button" class="btn btn-custom btn-circle" title="" data-toggle="tooltip" data-original-title="Filter"><i class="ti-filter"></i> </button>
                                               </div>
-                                              <div class="col-md-6 nopaddingleft nopaddingright">
-                                                <div class="pull-right table-search">
-                                                  <form role="search" class="app-search pull-left">
-                                                      <input type="text" placeholder="Search..." class="form-control"> <a href=""><i class="fa fa-search"></i></a>
-                                                  </form>
-                                                  <button type="button" class="btn btn-custom btn-circle" title="" data-toggle="tooltip" data-original-title="Filter"><i class="ti-filter"></i> </button>
-                                                </div>
-                                              </div>
-
+                                          </div>
                                           <div class="clearfix"></div>
-
                                               <div id="table-scroll" class="table-scroll custom-scroll">
                                                   <div id="faux-table" class="faux-table table-responsive custom-scroll" aria="hidden"></div>
                                                   <div class="table-wrap table-responsive custom-scroll">
                                                     <table id="main-table" class="table MarginTop10 table-striped table-bordered table-hover">
                                                       <thead>
                                                         <tr>
-
+                                                          <th scope="col">Id</th>
                                                           <th scope="col">Name</th>
-                                                          <th scope="col">Description</th>
-                                                          <th scope="col">Special&nbsp;Start&nbsp;Date</th>
-                                                          <th scope="col">Special&nbsp;End&nbsp;Date</th>
-                                                          <th scope="col">Pre-Book&nbsp;End&nbsp;Date</th>
+                                                          <th scope="col">Start&nbsp;Date</th>
+                                                          <th scope="col">End&nbsp;Date</th>
                                                           <th scope="col">Specials</th>
                                                           <th scope="col">Items&nbsp;Count</th>
                                                           <th scope="col">Created&nbsp;By</th>
@@ -414,12 +381,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                                       </thead>
                                                       <tbody>
                                                         <tr>
-
+                                                          <td>01</td>
                                                           <td>VLD Prebook</td>
-                                                          <td>Beautiful VLD Fashion Items</td>
                                                           <td>09/22/2019</td>
                                                           <td>09/30/2019</td>
-                                                          <td>10/05/2019</td>
                                                           <td>Specials</td>
                                                           <td>10</td>
                                                           <td>Chi</td>
@@ -429,12 +394,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                                           </td>
                                                         </tr>
                                                         <tr>
-
+                                                          <td>02</td>
                                                           <td>Patriotic Day Pre-Book</td>
-                                                          <td>Patriotic Day Sale</td>
                                                           <td>01/15/2020</td>
                                                           <td>01/30/2020</td>
-                                                          <td>10/21/2020</td>
                                                           <td>Specials</td>
                                                           <td>10</td>
                                                           <td>Chi</td>
@@ -444,12 +407,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                                           </td>
                                                         </tr>
                                                         <tr>
-
+                                                          <td>03</td>
                                                           <td>Christmas Pre-Book</td>
-                                                          <td>Christmas Items</td>
                                                           <td>10/05/2019</td>
                                                           <td>10/13/2019</td>
-                                                          <td>10/22/2019</td>
                                                           <td>Specials</td>
                                                           <td>23</td>
                                                           <td>Andrew</td>
@@ -459,12 +420,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                                           </td>
                                                         </tr>
                                                         <tr>
-
+                                                          <td>04</td>
                                                           <td>Seasonal Pre-Book</td>
-                                                          <td>Seasonal Items</td>
                                                           <td>10/15/2019</td>
                                                           <td>10/23/2019</td>
-                                                          <td>10/27/2019</td>
                                                           <td>Specials</td>
                                                           <td>50</td>
                                                           <td>Chi</td>
@@ -474,11 +433,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                                           </td>
                                                         </tr>
                                                         <tr>
-
+                                                          <td>05</td>
                                                           <td>Thanksgiving Pre-Book</td>
-                                                          <td>Thanksgiving Items</td>
                                                           <td>10/25/2019</td>
-                                                          <td>11/05/2019</td>
                                                           <td>11/05/2019</td>
                                                           <td>Specials</td>
                                                           <td>10</td>
@@ -677,59 +634,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </div>
                     </div>
                 </div>
-                <div id="Save" class="modal fade custom-modal" tabindex="-1" role="dialog" aria-labelledby="vcenter" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered modal-md">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h4 class="modal-title text-center" id="vcenter">Save</h4>
-                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="position:absolute; right:11px; top:10px; font-size:17px;"><i class="fa fa-times"></i></button>
-                                            </div>
-                                            <div class="modal-body">
-                                              <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label class="control-label">Discount(%):<sup class="required">*</sup></label>
-                                                    <input type="text" class="form-control" />
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="control-label">Discount($):<sup class="required">*</sup></label>
-                                                    <input type="text" class="form-control" />
-                                                </div>
-                                                <div class="form-group col-md-12">
-                                                  <label class="control-label">Freight Terms: </label>
-                                                  <select id="FreightTerms" class="form-control">
-                                                    <option value="">Customer Pickup</option>
-                                                    <option value="">Freight Cap</option>
-                                                    <option value="">Flat Rate</option>
-                                                    <option value="">Freight Collect</option>
-                                                    <option value="">Freight Free</option>
-                                                    <option value="">Prepaid and Bill</option>
-                                                  </select>
-                                                </div>
-                                                <div class="form-group col-md-12">
-                                                  <label class="control-label">Payments Terms: </label>
-                                                  <select id="PaymenTerms" class="form-control">
-                                                    <option value="">Performa Invoice</option>
-                                                    <option value="">Pre Pay</option>
-                                                    <option value="">NET 10</option>
-                                                    <option value="">NET 30</option>
-                                                    <option value="">NET 45</option>
-                                                    <option value="">NET 60</option>
-                                                    <option value="">NET 90</option>
-                                                    <option value="">NET 120</option>
-                                                  </select>
-                                                </div>
-                                              </div>
-
-                                            </div>
-                                            <div class="modal-footer text-center center-block">
-                                                <button class="fcbtn btn btn-outline btn-primary btn-1c" type="button">Save</button>
-                                                <button class="fcbtn btn btn-outline btn-primary btn-1c" data-dismiss="modal" type="button">Close</button>
-                                            </div>
-                                        </div>
-                                        <!-- /.modal-content -->
-                                    </div>
-                                    <!-- /.modal-dialog -->
-                                </div>
                 <div id="AddItembyUPC" class="modal fade custom-modal" tabindex="-1" role="dialog" aria-labelledby="vcenter" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered modal-md">
                                         <div class="modal-content">
