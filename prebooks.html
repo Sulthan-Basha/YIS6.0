@@ -572,6 +572,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                                           <th scope="col">Case&nbsp;Pack</th>
                                                           <th scope="col">Min&nbsp;Sell</th>
                                                           <th scope="col">Min&nbsp;Pack</th>
+                                                          <th scope="col">Prebook&nbsp;Price</th>
                                                           <th scope="col">Status</th>
                                                           <th scope="col">Actions</th>
                                                         </tr>
@@ -592,6 +593,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                                           <td>8</td>
                                                           <td>12</td>
                                                           <td>5</td>
+                                                          <td><input type="text" placeholder="$3.25" class="form-control"/></td>
                                                           <td><span class="badge badge-success">ACT</span></td>
                                                           <td>
                                                               <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Delete"><button type="button" class="btn btn-custom btn-circle Delete"><i class="fa fa-trash"></i> </button></a>
@@ -612,6 +614,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                                           <td>6</td>
                                                           <td>6</td>
                                                           <td>5</td>
+                                                          <td><input type="text" placeholder="$2.71" class="form-control"/></td>
                                                           <td><span class="badge badge-success">ACT</span></td>
                                                           <td>
                                                               <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Delete"><button type="button" class="btn btn-custom btn-circle Delete"><i class="fa fa-trash"></i> </button></a>
@@ -632,6 +635,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                                           <td>4</td>
                                                           <td>6</td>
                                                           <td>12</td>
+                                                          <td><input type="text" placeholder="$1.73" class="form-control"/></td>
                                                           <td><span class="badge badge-success">ACT</span></td>
                                                           <td>
                                                               <a href="#" title="" data-toggle="tooltip" data-placement="top" data-original-title="Delete"><button type="button" class="btn btn-custom btn-circle Delete"><i class="fa fa-trash"></i> </button></a>
@@ -687,14 +691,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                             <div class="modal-body">
                                               <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <label class="control-label">Discount(%):<sup class="required">*</sup></label>
+                                                    <label class="control-label">Pre-Book Discount %:</label>
                                                     <input type="text" class="form-control" />
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="control-label">Pre-Book Price:</label>
+                                                    <label class="control-label">Pre-Book Discount $:</label>
                                                     <input type="text" class="form-control" />
                                                 </div>
-                                                <div class="form-group col-md-12">
+                                                <!-- <div class="form-group">
+                                                    <label class="control-label">Pre-Book Price:</label>
+                                                    <input type="text" class="form-control" />
+                                                </div> -->
+                                                <div class="form-group">
                                                   <label class="control-label">Freight Terms: </label>
                                                   <select id="FreightTerms" class="form-control">
                                                     <option value="">Customer Pickup</option>
@@ -705,7 +713,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                                     <option value="">Prepaid and Bill</option>
                                                   </select>
                                                 </div>
-                                                <div class="form-group col-md-12">
+                                                <div class="form-group">
                                                   <label class="control-label">Payments Terms: </label>
                                                   <select id="PaymenTerms" class="form-control">
                                                     <option value="">Performa Invoice</option>
